@@ -8,11 +8,11 @@
 
 ## 🌟 [今日 (2026-06-15)](reports/2026-06-15.md)
 
-| # | 项目 | Stars | 增长 | 分类 |
-|---|------|-------|------|------|
-| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 378,767 | 📈 新上榜 | ⚡ 今日新星 |
-| 🥈 | [obra/superpowers](https://github.com/obra/superpowers) | 228,222 | 📈 新上榜 | 🧩 Agent Skills |
-| 🥉 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 215,711 | 📈 新上榜 | 🧩 Agent Skills |
-| 4 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 193,858 | 📈 新上榜 | 🤖 AI Agent |
-| 5 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | 192,570 | 📈 新上榜 | 🔌 MCP 生态 |
+| # | 项目 | Stars | 日均增长 | 分类 |
+|---|------|-------|----------|------|
+| 🥇 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 10,179 | 🚀 3062/天 | 🧩 Agent Skills |
+| 🥈 | [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | 1,391 | 🚀 361/天 | 🛡️ AI 安全 |
+| 🥉 | [orange2ai/renwei-writing](https://github.com/orange2ai/renwei-writing) | 639 | 🚀 260/天 | 🧩 Agent Skills |
+| 4 | [SkyBlue997/enableMacosAI](https://github.com/SkyBlue997/enableMacosAI) | 1,247 | 🚀 260/天 | 🛡️ AI 安全 |
+| 5 | [plannotator/effective-html](https://github.com/plannotator/effective-html) | 857 | 🚀 159/天 | 🧩 Agent Skills |
 
