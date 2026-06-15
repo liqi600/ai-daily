@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 2025-2026 最火 AI 开源项目精选 | GitHub Trending AI Projects</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+      color: #c9d1d9;
+      min-height: 100vh;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1f6feb22 0%, #23863622 100%);
+      border-bottom: 1px solid #30363d;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      background: linear-gradient(90deg, #58a6ff, #3fb950);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
+    }
+    .hero p { color: #8b949e; font-size: 1.1em; }
+    .hero .date-badge {
+      display: inline-block;
+      background: #1f6feb33;
+      border: 1px solid #1f6feb;
+      color: #58a6ff;
+      padding: 6px 20px;
+      border-radius: 20px;
+      margin-top: 16px;
+      font-size: 0.9em;
+    }
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat .num {
+      font-size: 2em;
+      font-weight: 700;
+      color: #58a6ff;
+    }
+    .stat .label {
+      font-size: 0.85em;
+      color: #8b949e;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .section-title {
+      font-size: 1.6em;
+      color: #58a6ff;
+      margin: 40px 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #30363d;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title .emoji { font-size: 1.2em; }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 24px;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover {
+      border-color: #58a6ff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(31, 111, 235, 0.15);
+    }
+    .project-card .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .project-card .rank {
+      background: linear-gradient(135deg, #f0883e, #d29922);
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8em;
+      flex-shrink: 0;
+    }
+    .project-card .name {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #58a6ff;
+    }
+    .project-card .name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .project-card .name a:hover { text-decoration: underline; }
+    .project-card .description {
+      color: #8b949e;
+      font-size: 0.92em;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+    .project-card .meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.82em;
+    }
+    .project-card .meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .stars { color: #d29922; }
+    .lang { color: #58a6ff; }
+    .date { color: #8b949e; }
+    .topics {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .topic-tag {
+      background: #1f6feb22;
+      border: 1px solid #30363d;
+      color: #58a6ff;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 0.75em;
+    }
+    .pros {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #30363d;
+    }
+    .pros .pros-title {
+      font-size: 0.82em;
+      color: #3fb950;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .pros ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pros li {
+      font-size: 0.8em;
+      color: #8b949e;
+      padding: 2px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+    .pros li::before {
+      content: "✓";
+      color: #3fb950;
+      position: absolute;
+      left: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #484f58;
+      font-size: 0.85em;
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .toc a {
+      color: #58a6ff;
+      text-decoration: none;
+      padding: 6px 14px;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      font-size: 0.85em;
+      transition: all 0.2s;
+    }
+    .toc a:hover { background: #1f6feb22; border-color: #58a6ff; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🚀 2025-2026 最火 AI 开源项目精选</h1>
+  <p>基于 GitHub 实时搜索，精选 20 个最具影响力的 AI 开源项目</p>
+  <div class="date-badge">📅 更新于 2026年6月15日</div>
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="num">20</div>
+      <div class="label">精选项目</div>
+    </div>
+    <div class="stat">
+      <div class="num">1.2M+</div>
+      <div class="label">累计 Stars</div>
+    </div>
+    <div class="stat">
+      <div class="num">6</div>
+      <div class="label">分类维度</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- 目录 -->
+  <div class="toc">
+    <a href="#agents">🤖 AI Agent 框架</a>
+    <a href="#mcp">🔌 MCP & 开发工具</a>
+    <a href="#infa">🏗️ AI 基础设施</a>
+    <a href="#memory">🧠 记忆 & 上下文</a>
+    <a href="#security">🛡️ AI 安全</a>
+    <a href="#resources">📚 学习资源</a>
+  </div>
+
+  <!-- ============ AI AGENT 框架 ============ -->
+  <h2 id="agents" class="section-title"><span class="emoji">🤖</span> AI Agent 框架 & 编码助手</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">1</span>
+        <span class="name"><a href="https://github.com/NousResearch/hermes-agent" target="_blank">NousResearch/hermes-agent</a></span>
+      </div>
+      <div class="description">🦾 The agent that grows with you — Nous Research 推出的通用 AI Agent，支持多模型后端，自适应学习你的工作方式。</div>
+      <div class="meta">
+        <span class="stars">⭐ 193,841</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-07</span>
+      </div>
+      <div class="topics"><span class="topic-tag">ai-agent</span><span class="topic-tag">anthropic</span><span class="topic-tag">multi-model</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>多模型后端支持（Anthropic/OpenAI/本地模型）</li>
+          <li>自适应学习，越用越懂你的工作流</li>
+          <li>193K+ Stars，社区活跃度极高</li>
+          <li>Nous Research 出品，品质有保障</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">2</span>
+        <span class="name"><a href="https://github.com/shareAI-lab/learn-claude-code" target="_blank">shareAI-lab/learn-claude-code</a></span>
+      </div>
+      <div class="description">📖 Bash is all you need — 从 0 到 1 构建类 Claude Code 的 Agent Harness，手把手教学。</div>
+      <div class="meta">
+        <span class="stars">⭐ 66,579</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-06</span>
+      </div>
+      <div class="topics"><span class="topic-tag">agent-harness</span><span class="topic-tag">claude-code</span><span class="topic-tag">tutorial</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>完整教学：从零实现 Agent Harness 架构</li>
+          <li>深入理解 Claude Code 类工具工作原理</li>
+          <li>66K+ Stars，顶级的 Vibe Coding 教材</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">3</span>
+        <span class="name"><a href="https://github.com/HKUDS/nanobot" target="_blank">HKUDS/nanobot</a></span>
+      </div>
+      <div class="description">🤖 轻量级开源 AI Agent，为你的工具、聊天和工作流打造，支持多平台、多模型。</div>
+      <div class="meta">
+        <span class="stars">⭐ 44,211</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2026-02</span>
+      </div>
+      <div class="topics"><span class="topic-tag">ai-agent</span><span class="topic-tag">multi-platform</span><span class="topic-tag">workflow</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>香港大学出品，学术+工程兼顾</li>
+          <li>极度轻量，快速部署</li>
+          <li>2026年新项目，架构现代化</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">4</span>
+        <span class="name"><a href="https://github.com/simstudioai/sim" target="_blank">simstudioai/sim</a></span>
+      </div>
+      <div class="description">🏭 构建、部署和编排 AI Agent 的一站式平台，你 AI 员工队伍的中枢智能层。</div>
+      <div class="meta">
+        <span class="stars">⭐ 28,773</span>
+        <span class="lang">📘 TypeScript</span>
+        <span class="date">📅 2025-01</span>
+      </div>
+      <div class="topics"><span class="topic-tag">agent-workflow</span><span class="topic-tag">orchestration</span><span class="topic-tag">deploy</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>完整的 Agent 生命周期管理</li>
+          <li>可视化工作流编排</li>
+          <li>企业级部署能力</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">5</span>
+        <span class="name"><a href="https://github.com/iOfficeAI/AionUi" target="_blank">iOfficeAI/AionUi</a></span>
+      </div>
+      <div class="description">🖥️ 免费、本地、开源 24/7 Cowork 应用，支持 20+ CLI Agent 工具。</div>
+      <div class="meta">
+        <span class="stars">⭐ 28,267</span>
+        <span class="lang">📘 TypeScript</span>
+        <span class="date">📅 2025-08</span>
+      </div>
+      <div class="topics"><span class="topic-tag">cowork</span><span class="topic-tag">agent-team</span><span class="topic-tag">multi-cli</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>一个界面管理 20+ Agent 工具</li>
+          <li>本地运行，数据不出设备</li>
+          <li>Support OpenClaw/Hermes/Codex/Claude Code</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">6</span>
+        <span class="name"><a href="https://github.com/bytedance/UI-TARS-desktop" target="_blank">bytedance/UI-TARS-desktop</a></span>
+      </div>
+      <div class="description">🖱️ 字节跳动开源多模态 AI Agent 技术栈，连接前沿 AI 模型与 Agent 基础设施。</div>
+      <div class="meta">
+        <span class="stars">⭐ 36,414</span>
+        <span class="lang">📘 TypeScript</span>
+        <span class="date">📅 2025-01</span>
+      </div>
+      <div class="topics"><span class="topic-tag">computer-use</span><span class="topic-tag">multimodal</span><span class="topic-tag">browser-use</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>字节跳动重量级开源项目</li>
+          <li>多模态桌面操控能力</li>
+          <li>Computer-Use 领域标杆项目</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ MCP & 开发工具 ============ -->
+  <h2 id="mcp" class="section-title"><span class="emoji">🔌</span> MCP & Agent 开发工具</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">1</span>
+        <span class="name"><a href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a></span>
+      </div>
+      <div class="description">⚡ 215K Stars 超级项目！Agent Harness 性能优化系统，为 Claude Code/Codex/Cursor 提供 Skills、记忆、安全增强。</div>
+      <div class="meta">
+        <span class="stars">⭐ 215,695</span>
+        <span class="lang">📒 JavaScript</span>
+        <span class="date">📅 2026-01</span>
+      </div>
+      <div class="topics"><span class="topic-tag">agent-harness</span><span class="topic-tag">skills</span><span class="topic-tag">performance</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>215K Stars，现象级项目</li>
+          <li>Skills/Instincts/Memory/Security 全套增强</li>
+          <li>兼容所有主流 Agent 工具</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">2</span>
+        <span class="name"><a href="https://github.com/farion1231/cc-switch" target="_blank">farion1231/cc-switch</a></span>
+      </div>
+      <div class="description">🖥️ 跨平台桌面 All-in-One 助手，一站式管理 Claude Code/Codex/OpenCode/Gemini CLI 等。</div>
+      <div class="meta">
+        <span class="stars">⭐ 101,133</span>
+        <span class="lang">🦀 Rust</span>
+        <span class="date">📅 2025-08</span>
+      </div>
+      <div class="topics"><span class="topic-tag">desktop-app</span><span class="topic-tag">multi-agent</span><span class="topic-tag">cross-platform</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>Rust 开发，性能卓越</li>
+          <li>一个界面管理所有 Agent 工具</li>
+          <li>101K Stars，社区生态繁荣</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">3</span>
+        <span class="name"><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank">ChromeDevTools/chrome-devtools-mcp</a></span>
+      </div>
+      <div class="description">🔧 Google 官方出品！Chrome DevTools MCP Server，让 AI Agent 直接操控浏览器调试。</div>
+      <div class="meta">
+        <span class="stars">⭐ 43,637</span>
+        <span class="lang">📘 TypeScript</span>
+        <span class="date">📅 2025-09</span>
+      </div>
+      <div class="topics"><span class="topic-tag">chrome</span><span class="topic-tag">devtools</span><span class="topic-tag">mcp</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>Google Chrome 团队官方维护</li>
+          <li>让 AI 直接调试网页应用</li>
+          <li>MCP 协议标准实现，兼容所有 Agent</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">4</span>
+        <span class="name"><a href="https://github.com/ComposioHQ/awesome-claude-skills" target="_blank">ComposioHQ/awesome-claude-skills</a></span>
+      </div>
+      <div class="description">📋 最全的 Claude Skills 资源集合，涵盖自动化、工作流定制、Agent 技能。</div>
+      <div class="meta">
+        <span class="stars">⭐ 64,632</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-10</span>
+      </div>
+      <div class="topics"><span class="topic-tag">agent-skills</span><span class="topic-tag">claude</span><span class="topic-tag">awesome-list</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>最全面的 Skills 资源索引</li>
+          <li>社区持续更新</li>
+          <li>覆盖所有主流 Agent 平台</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ AI 基础设施 ============ -->
+  <h2 id="infa" class="section-title"><span class="emoji">🏗️</span> AI 基础设施 & 文档</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">1</span>
+        <span class="name"><a href="https://github.com/upstash/context7" target="_blank">upstash/context7</a></span>
+      </div>
+      <div class="description">📚 实时更新的代码文档平台，为 LLM 和 AI 代码编辑器提供最新 API 文档，告别过时代码。</div>
+      <div class="meta">
+        <span class="stars">⭐ 57,381</span>
+        <span class="lang">📘 TypeScript</span>
+        <span class="date">📅 2025-03</span>
+      </div>
+      <div class="topics"><span class="topic-tag">llm</span><span class="topic-tag">documentation</span><span class="topic-tag">mcp</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>解决 LLM API 幻觉问题</li>
+          <li>实时文档更新，永远是最新版</li>
+          <li>MCP 原生集成</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">2</span>
+        <span class="name"><a href="https://github.com/trycua/cua" target="_blank">trycua/cua</a></span>
+      </div>
+      <div class="description">🖥️ Computer-Use Agent 开源基础设施，含沙箱、SDK、基准测试，让 AI 能操控完整桌面。</div>
+      <div class="meta">
+        <span class="stars">⭐ 17,988</span>
+        <span class="lang">🌐 HTML</span>
+        <span class="date">📅 2025-01</span>
+      </div>
+      <div class="topics"><span class="topic-tag">computer-use</span><span class="topic-tag">sandbox</span><span class="topic-tag">benchmark</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>完整的 Computer-Use Agent 套件</li>
+          <li>跨平台支持 (macOS/Linux/Windows)</li>
+          <li>训练和评估一体化</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">3</span>
+        <span class="name"><a href="https://github.com/sansan0/TrendRadar" target="_blank">sansan0/TrendRadar</a></span>
+      </div>
+      <div class="description">📡 AI 驱动的舆情监控与趋势分析工具，支持多平台聚合、MCP 架构、智能推送。</div>
+      <div class="meta">
+        <span class="stars">⭐ 59,449</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-04</span>
+      </div>
+      <div class="topics"><span class="topic-tag">data-analysis</span><span class="topic-tag">mcp</span><span class="topic-tag">rss</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>AI 智能筛选+翻译+分析简报</li>
+          <li>支持微信/飞书/钉钉/Telegram 推送</li>
+          <li>MCP 架构，AI 自然语言对话分析</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ 记忆 & 上下文 ============ -->
+  <h2 id="memory" class="section-title"><span class="emoji">🧠</span> AI 记忆 & 上下文管理</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">1</span>
+        <span class="name"><a href="https://github.com/thedotmack/claude-mem" target="_blank">thedotmack/claude-mem</a></span>
+      </div>
+      <div class="description">💾 跨会话持久化上下文！捕获 Agent 所有操作，AI 压缩后注入后续会话，支持所有主流 Agent 工具。</div>
+      <div class="meta">
+        <span class="stars">⭐ 82,346</span>
+        <span class="lang">📒 JavaScript</span>
+        <span class="date">📅 2025-08</span>
+      </div>
+      <div class="topics"><span class="topic-tag">ai-memory</span><span class="topic-tag">persistent-context</span><span class="topic-tag">multi-agent</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>解决 Agent "遗忘"问题的标杆方案</li>
+          <li>AI 压缩上下文，效率极高</li>
+          <li>兼容 Claude Code/Codex/Gemini/Copilot 等</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">2</span>
+        <span class="name"><a href="https://github.com/MemPalace/mempalace" target="_blank">MemPalace/mempalace</a></span>
+      </div>
+      <div class="description">🏆 性能最佳的免费开源 AI 记忆系统，全免费。</div>
+      <div class="meta">
+        <span class="stars">⭐ 55,634</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2026-04</span>
+      </div>
+      <div class="topics"><span class="topic-tag">memory</span><span class="topic-tag">chromadb</span><span class="topic-tag">mcp</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>最新标杆级 AI 记忆方案</li>
+          <li>Chromadb 向量存储，检索精准</li>
+          <li>完全免费开源</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">3</span>
+        <span class="name"><a href="https://github.com/CaviraOSS/OpenMemory" target="_blank">CaviraOSS/OpenMemory</a></span>
+      </div>
+      <div class="description">💿 本地持久化记忆存储，为 LLM 应用提供记忆后端，支持 Claude Desktop/Copilot/Codex 等。</div>
+      <div class="meta">
+        <span class="stars">⭐ 4,237</span>
+        <span class="lang">📘 TypeScript</span>
+        <span class="date">📅 2025-10</span>
+      </div>
+      <div class="topics"><span class="topic-tag">ai-memory</span><span class="topic-tag">local-first</span><span class="topic-tag">llm</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>数据完全本地存储，隐私安全</li>
+          <li>轻量级，快速集成</li>
+          <li>支持所有主流 Agent 工具</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ AI 安全 ============ -->
+  <h2 id="security" class="section-title"><span class="emoji">🛡️</span> AI 安全</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">1</span>
+        <span class="name"><a href="https://github.com/usestrix/strix" target="_blank">usestrix/strix</a></span>
+      </div>
+      <div class="description">🔒 开源 AI 黑客 — 自动发现和修复应用漏洞，让 AI 帮你做安全测试。</div>
+      <div class="meta">
+        <span class="stars">⭐ 26,002</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-08</span>
+      </div>
+      <div class="topics"><span class="topic-tag">cybersecurity</span><span class="topic-tag">agents</span><span class="topic-tag">pentesting</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>AI Agent 自动化渗透测试</li>
+          <li>发现即修复的完整闭环</li>
+          <li>26K Stars，安全领域最热项目</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">2</span>
+        <span class="name"><a href="https://github.com/0x4m4/hexstrike-ai" target="_blank">0x4m4/hexstrike-ai</a></span>
+      </div>
+      <div class="description">💀 150+ 网络安全工具的 MCP Agent，让 AI 自主执行渗透测试和漏洞挖掘。</div>
+      <div class="meta">
+        <span class="stars">⭐ 9,582</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-07</span>
+      </div>
+      <div class="topics"><span class="topic-tag">cybersecurity</span><span class="topic-tag">mcp</span><span class="topic-tag">pentesting</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>150+ 安全工具集成</li>
+          <li>MCP 协议原生，AI 即安全专家</li>
+          <li>覆盖 Bug Bounty 全流程</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ 学习资源 ============ -->
+  <h2 id="resources" class="section-title"><span class="emoji">📚</span> 学习资源 & 工具</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">1</span>
+        <span class="name"><a href="https://github.com/liyupi/ai-guide" target="_blank">liyupi/ai-guide</a></span>
+      </div>
+      <div class="description">📖 程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，含 MCP/RAG/A2A/Agent Skills 等知识百科。</div>
+      <div class="meta">
+        <span class="stars">⭐ 15,800</span>
+        <span class="lang">📒 JavaScript</span>
+        <span class="date">📅 2025-02</span>
+      </div>
+      <div class="topics"><span class="topic-tag">ai-tutorial</span><span class="topic-tag">vibe-coding</span><span class="topic-tag">mcp</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>中文最佳 AI 编程入门资源</li>
+          <li>覆盖 Vibe Coding 全栈知识</li>
+          <li>持续更新，紧跟最新技术</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">2</span>
+        <span class="name"><a href="https://github.com/skyzh/tiny-llm" target="_blank">skyzh/tiny-llm</a></span>
+      </div>
+      <div class="description">🎓 在 Apple Silicon 上学习 LLM 推理服务：从零构建 mini vLLM + Qwen 的系统课程。</div>
+      <div class="meta">
+        <span class="stars">⭐ 4,278</span>
+        <span class="lang">🐍 Python</span>
+        <span class="date">📅 2025-04</span>
+      </div>
+      <div class="topics"><span class="topic-tag">llm-inference</span><span class="topic-tag">course</span><span class="topic-tag">qwen</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>深入理解 LLM 推理底层原理</li>
+          <li>Apple Silicon 原生优化</li>
+          <li>实操驱动，构建真实推理引擎</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="header">
+        <span class="rank">3</span>
+        <span class="name"><a href="https://github.com/rasbt/reasoning-from-scratch" target="_blank">rasbt/reasoning-from-scratch</a></span>
+      </div>
+      <div class="description">🧠 从零手写 Reasoning LLM！PyTorch 逐步实现推理模型，理解 Chain-of-Thought 黑盒。</div>
+      <div class="meta">
+        <span class="stars">⭐ 4,504</span>
+        <span class="lang">📓 Jupyter Notebook</span>
+        <span class="date">📅 2025-03</span>
+      </div>
+      <div class="topics"><span class="topic-tag">reasoning</span><span class="topic-tag">chain-of-thought</span><span class="topic-tag">pytorch</span></div>
+      <div class="pros">
+        <div class="pros-title">核心优势</div>
+        <ul>
+          <li>Sebastian Raschka 大牛出品</li>
+          <li>从零理解推理模型内部机制</li>
+          <li>Jupyter Notebook 交互式学习</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>📊 数据来源：GitHub API 实时搜索 | 🕐 更新于 2026年6月15日</p>
+  <p>Made with ❤️ by AI Daily</p>
+</footer>
+
+</body>
+</html>
