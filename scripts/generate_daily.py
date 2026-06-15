@@ -171,7 +171,7 @@ def update_readme(projects):
     table = "\n".join(rows)
 
     today_block = (
-        f"## 🌟 今日 ({TODAY})\n\n"
+        f"## 🌟 [今日 ({TODAY})](reports/{TODAY}.md)\n\n"
         f"| # | 项目 | Stars | 增长 | 分类 |\n"
         f"|---|------|-------|------|------|\n"
         f"{table}\n"
