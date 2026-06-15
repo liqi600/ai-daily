@@ -1,62 +1,18 @@
-# 🔥 AI 开源项目日报
+# 🔥 AI 开源项目每日热点
 
-> 每天精选 GitHub 上最新、最热的 AI 开源项目，涵盖 AI Agent、MCP、LLM、AI 安全、学习资源等方向。
-
-## 📊 项目说明
-
-- **更新频率**: 每日更新
-- **数据来源**: GitHub API 实时搜索
-- **覆盖领域**: AI Agent / MCP 工具 / LLM / AI 安全 / 学习资源
-- **展示形式**: Markdown 日报 + 可视化 HTML 页面
-
-## 📁 目录结构
-
-```
-├── index.html          # 可视化首页（所有项目汇总）
-├── reports/            # 每日日报（Markdown 格式）
-│   └── 2026-06-15.md
-└── README.md
-```
-
-## 🌟 今日精选 (2026-06-15)
-
-| 排名 | 项目 | Stars | 领域 |
-|------|------|-------|------|
-| 🥇 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 215,695 | Agent 工具 |
-| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 193,841 | AI Agent |
-| 🥉 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 101,133 | Agent 管理 |
-| 4 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 82,346 | AI 记忆 |
-| 5 | [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 66,579 | 学习教程 |
-
-## 🔖 分类索引
-
-- 🤖 [AI Agent 框架](./reports/2026-06-15.md#-ai-agent-框架--编码助手)
-- 🔌 [MCP & 开发工具](./reports/2026-06-15.md#-mcp--agent-开发工具)
-- 🏗️ [AI 基础设施](./reports/2026-06-15.md#-ai-基础设施)
-- 🧠 [AI 记忆 & 上下文](./reports/2026-06-15.md#-ai-记忆--上下文)
-- 🛡️ [AI 安全](./reports/2026-06-15.md#-ai-安全)
-- 📚 [学习资源](./reports/2026-06-15.md#-学习资源)
-
-## 🚀 快速开始
-
-```bash
-# 克隆仓库
-git clone https://github.com/xiclaw/ai-daily.git
-cd ai-daily
-
-# 打开可视化页面
-open index.html
-
-# 查看今日日报
-cat reports/2026-06-15.md
-```
-
-## 🤝 贡献
-
-欢迎提交 PR 补充优秀 AI 项目！请在本期的 md 文件末尾添加。
+> 每天自动追踪 GitHub 上 Star 增长最快的 AI 开源项目
+> 
+> 覆盖 AI Agent · Agent Skills · MCP 生态 · LLM 大模型 · AI 安全 等方向
 
 ---
 
-<p align="center">
-  <b>⭐ Star 收藏，每天获取最新 AI 开源动态！</b>
-</p>
+## 🌟 今日 (2026-06-15)
+
+| # | 项目 | Stars | 增长 | 分类 |
+|---|------|-------|------|------|
+| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 378,767 | 📈 新上榜 | ⚡ 今日新星 |
+| 🥈 | [obra/superpowers](https://github.com/obra/superpowers) | 228,222 | 📈 新上榜 | 🧩 Agent Skills |
+| 🥉 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 215,711 | 📈 新上榜 | 🧩 Agent Skills |
+| 4 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 193,858 | 📈 新上榜 | 🤖 AI Agent |
+| 5 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | 192,570 | 📈 新上榜 | 🔌 MCP 生态 |
+
