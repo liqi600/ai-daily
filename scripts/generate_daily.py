@@ -308,7 +308,7 @@ def build_report(projects):
 
 
 def update_readme(projects):
-    """Update README.md: add today's link to index + update top-5 summary."""
+    """Update README.md: replace today top-5 block + maintain daily index."""
     path = os.path.join(REPO_DIR, "README.md")
     if not os.path.exists(path):
         return
@@ -330,19 +330,25 @@ def update_readme(projects):
         f"{table}\n"
     )
 
-    # Replace today block
-    pat = re.compile(r"## 🌟 今日.*?\n\n(\|.*\n)*", re.DOTALL)
+    # Replace today block — heading has [今日 (date)](link) format
+    pat = re.compile(r"## 🌟 \[今日.*?\n\n(\|.*\n)*", re.DOTALL)
     if pat.search(content):
         content = pat.sub(today_block + "\n", content)
     else:
-        content = content.replace("## 📅 历史日报", f"{today_block}\n## 📅 历史日报")
+        # Initial README: insert after first --- divider
+        idx = content.find("\n---\n")
+        if idx != -1:
+            end = content.index("\n", idx + 5) + 1
+            content = content[:end] + "\n" + today_block + "\n" + content[end:]
 
-    # Update daily index: add link if not exists
+    # Maintain daily index: add today's link if missing
     report_link = f"- [{TODAY_CN} 星期{WEEKDAY}](reports/{TODAY}.md)"
     if report_link not in content:
-        # insert after "## 📅 历史日报"
         idx = content.find("## 📅 历史日报")
-        if idx != -1:
+        if idx == -1:
+            # No index section yet — append after today block
+            content = content.rstrip() + "\n\n---\n\n## 📅 历史日报\n\n" + report_link + "\n"
+        else:
             nl = content.index("\n", idx) + 1
             content = content[:nl] + f"\n{report_link}" + content[nl:]
 
