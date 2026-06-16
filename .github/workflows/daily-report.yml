@@ -2,8 +2,10 @@ name: 🤖 AI Daily Report
 
 on:
   schedule:
-    # 每天北京时间 8:00 (UTC+8 = UTC 0:00)
+    # 每天北京时间 08:00 (UTC+8 = UTC 0:00)
     - cron: "0 0 * * *"
+    # 兜底：北京时间 10:00 (UTC 2:00)，防止首次调度延迟/跳过
+    - cron: "0 2 * * *"
   workflow_dispatch: # 支持手动触发
 
 permissions:

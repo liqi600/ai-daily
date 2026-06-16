@@ -4,7 +4,7 @@ AI Daily Hot Projects
 每日搜索 AI 项目 → 生成 reports/YYYY-MM-DD.md → 更新 README.md 索引
 """
 
-import json, os, re, urllib.request, urllib.error
+import json, os, re, urllib.request, urllib.error, html
 from datetime import datetime, timezone, timedelta
 
 # ─── Config ─────────────────────────────────────────────────────
@@ -17,19 +17,18 @@ WEEKDAY = ["一", "二", "三", "四", "五", "六", "日"][datetime.now(TZ_CN).
 REPORTS_DIR = os.path.join(REPO_DIR, "reports")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-# Time windows for "new projects" search
-DAY1 = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
+# Time windows
+DAY3 = (datetime.now(timezone.utc) - timedelta(days=3)).strftime("%Y-%m-%d")
 DAY7 = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
 DAY14 = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
 
+# High-quality queries: stars:>200 ensures projects are not garbage
 QUERIES = [
-    # 用 created: 不是 pushed: — 新项目 + 高 stars = Star 增长最快
-    ("🤖 AI Agent", f"topic:ai-agent+created:>{DAY7}+stars:>10", 8),
-    ("🧩 Agent Skills", f"agent-skills+OR+claude-skills+created:>{DAY14}+stars:>10", 6),
-    ("🔌 MCP 生态", f"topic:mcp+created:>{DAY14}+stars:>10", 6),
-    ("📚 LLM 大模型", f"topic:llm+created:>{DAY7}+stars:>10", 6),
-    ("🛡️ AI 安全", f"ai+security+OR+pentesting+created:>{DAY14}+stars:>10", 4),
-    ("⚡ 今日新星", f"ai+created:>{DAY1}+stars:>5", 8),
+    ("🤖 AI Agent", f"topic:ai-agent+stars:>200+pushed:>{DAY3}", 10),
+    ("🧩 Agent Skills", f"agent-skills+OR+claude-skills+stars:>100+pushed:>{DAY7}", 8),
+    ("🔌 MCP 生态", f"topic:mcp+stars:>100+pushed:>{DAY7}", 8),
+    ("📚 LLM 大模型", f"topic:llm+stars:>200+pushed:>{DAY7}", 8),
+    ("🛡️ AI 安全", f"ai+security+OR+pentest+stars:>50+pushed:>{DAY14}", 6),
 ]
 
 LANG = {"Python":"🐍","TypeScript":"📘","JavaScript":"📒","Rust":"🦀","Go":"🔷","Java":"☕","C++":"⚡","C#":"🎯","C":"🔧","HTML":"🌐","CSS":"🎨","Jupyter Notebook":"📓","Swift":"🍎","Kotlin":"💜","Ruby":"💎","Shell":"🐚","Vue":"💚","Dart":"🎯"}
@@ -354,6 +353,12 @@ def update_readme(projects):
 # ─── Main ───────────────────────────────────────────────────────
 
 def main():
+    # 幂等：同一天已有报告则跳过（兜底 cron 不会重复生成）
+    report_path = os.path.join(REPORTS_DIR, f"{TODAY}.md")
+    if os.path.exists(report_path):
+        print(f"\n⏭️ 今日报告已存在: {report_path}，跳过生成。\n")
+        return
+
     print(f"\n🚀 AI Daily · {TODAY_CN} 星期{WEEKDAY}\n")
     ps = search_all()
     if not ps:
