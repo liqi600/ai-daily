@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-06-16)](reports/2026-06-16.md)
+## 🌟 [今日 (2026-06-17)](reports/2026-06-17.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 378,883 | 🚀 1861/天 | 🛡️ AI 安全 |
-| 🥈 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 216,159 | 🚀 1451/天 | 🧩 Agent Skills |
-| 🥉 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 65,468 | 🚀 1340/天 | 🧩 Agent Skills |
-| 4 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 73,031 | 🚀 1006/天 | 🧩 Agent Skills |
-| 5 | [mattpocock/skills](https://github.com/mattpocock/skills) | 130,089 | 🚀 981/天 | 🧩 Agent Skills |
+| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 379,071 | 🚀 1852/天 | 🛡️ AI 安全 |
+| 🥈 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 216,786 | 🚀 1444/天 | 🧩 Agent Skills |
+| 🥉 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 66,059 | 🚀 1323/天 | 🧩 Agent Skills |
+| 4 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 73,633 | 🚀 999/天 | 🧩 Agent Skills |
+| 5 | [mattpocock/skills](https://github.com/mattpocock/skills) | 132,100 | 🚀 988/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年06月16日 星期二](reports/2026-06-16.md)
+- [2026年06月17日 星期三](reports/2026-06-17.md)
