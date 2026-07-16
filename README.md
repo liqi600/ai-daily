@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-07-15)](reports/2026-07-15.md)
+## 🌟 [今日 (2026-07-16)](reports/2026-07-16.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 83,132 | 🚀 2516/天 | 🧩 Agent Skills |
-| 🥈 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 382,949 | 🚀 1646/天 | 🛡️ AI 安全 |
-| 🥉 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 229,743 | 🚀 1290/天 | 🧩 Agent Skills |
-| 4 | [mattpocock/skills](https://github.com/mattpocock/skills) | 170,328 | 🚀 1054/天 | 🧩 Agent Skills |
-| 5 | [obra/superpowers](https://github.com/obra/superpowers) | 254,712 | 🚀 915/天 | 🧩 Agent Skills |
+| 🥇 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 84,064 | 🚀 2469/天 | 🧩 Agent Skills |
+| 🥈 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 383,049 | 🚀 1639/天 | 🛡️ AI 安全 |
+| 🥉 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 230,138 | 🚀 1285/天 | 🧩 Agent Skills |
+| 4 | [mattpocock/skills](https://github.com/mattpocock/skills) | 172,368 | 🚀 1060/天 | 🧩 Agent Skills |
+| 5 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 78,625 | 🚀 997/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年07月15日 星期三](reports/2026-07-15.md)
+- [2026年07月16日 星期四](reports/2026-07-16.md)
