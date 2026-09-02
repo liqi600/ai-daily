@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-09-01)](reports/2026-09-01.md)
+## 🌟 [今日 (2026-09-02)](reports/2026-09-02.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 388,340 | 🚀 1383/天 | 🛡️ AI 安全 |
-| 🥈 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 245,299 | 🚀 1085/天 | 🧩 Agent Skills |
-| 🥉 | [obra/superpowers](https://github.com/obra/superpowers) | 280,109 | 🚀 858/天 | 🧩 Agent Skills |
-| 4 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 113,059 | 🚀 751/天 | 🧩 Agent Skills |
-| 5 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 93,096 | 🚀 739/天 | 🧩 Agent Skills |
+| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 388,529 | 🚀 1379/天 | 🛡️ AI 安全 |
+| 🥈 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 245,796 | 🚀 1083/天 | 🧩 Agent Skills |
+| 🥉 | [obra/superpowers](https://github.com/obra/superpowers) | 280,470 | 🚀 857/天 | 🧩 Agent Skills |
+| 4 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 113,505 | 🚀 750/天 | 🧩 Agent Skills |
+| 5 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 93,374 | 🚀 736/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年09月01日 星期二](reports/2026-09-01.md)
+- [2026年09月02日 星期三](reports/2026-09-02.md)
