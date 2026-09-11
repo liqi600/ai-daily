@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-09-10)](reports/2026-09-10.md)
+## 🌟 [今日 (2026-09-11)](reports/2026-09-11.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 133,512 | 🚀 1482/天 | 🧩 Agent Skills |
-| 🥈 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 389,318 | 🚀 1344/天 | 🛡️ AI 安全 |
-| 🥉 | [mattpocock/skills](https://github.com/mattpocock/skills) | 257,929 | 🚀 1180/天 | 🧩 Agent Skills |
-| 4 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 255,230 | 🚀 1086/天 | 🧩 Agent Skills |
-| 5 | [obra/superpowers](https://github.com/obra/superpowers) | 284,073 | 🚀 847/天 | 🧩 Agent Skills |
+| 🥇 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 134,813 | 🚀 1480/天 | 🧩 Agent Skills |
+| 🥈 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 389,408 | 🚀 1340/天 | 🛡️ AI 安全 |
+| 🥉 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 255,927 | 🚀 1084/天 | 🧩 Agent Skills |
+| 4 | [obra/superpowers](https://github.com/obra/superpowers) | 284,737 | 🚀 847/天 | 🧩 Agent Skills |
+| 5 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 116,754 | 🚀 728/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年09月10日 星期四](reports/2026-09-10.md)
+- [2026年09月11日 星期五](reports/2026-09-11.md)
