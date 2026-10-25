@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-10-24)](reports/2026-10-24.md)
+## 🌟 [今日 (2026-10-25)](reports/2026-10-25.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [morluto/rea](https://github.com/morluto/rea) | 373,582 | 🚀 1935/天 | 🧩 Agent Skills |
-| 🥈 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 174,849 | 🚀 1304/天 | 🧩 Agent Skills |
-| 🥉 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 392,888 | 🚀 1177/天 | 🛡️ AI 安全 |
-| 4 | [mattpocock/skills](https://github.com/mattpocock/skills) | 301,863 | 🚀 1149/天 | 🧩 Agent Skills |
-| 5 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 287,388 | 🚀 1030/天 | 🧩 Agent Skills |
+| 🥇 | [morluto/rea](https://github.com/morluto/rea) | 379,110 | 🚀 1953/天 | 🧩 Agent Skills |
+| 🥈 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 392,968 | 🚀 1174/天 | 🛡️ AI 安全 |
+| 🥉 | [mattpocock/skills](https://github.com/mattpocock/skills) | 302,567 | 🚀 1148/天 | 🧩 Agent Skills |
+| 4 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 288,139 | 🚀 1029/天 | 🧩 Agent Skills |
+| 5 | [obra/superpowers](https://github.com/obra/superpowers) | 304,663 | 🚀 801/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年10月24日 星期六](reports/2026-10-24.md)
+- [2026年10月25日 星期日](reports/2026-10-25.md)
