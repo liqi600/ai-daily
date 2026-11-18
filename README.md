@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-11-17)](reports/2026-11-17.md)
+## 🌟 [今日 (2026-11-18)](reports/2026-11-18.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [morluto/rea](https://github.com/morluto/rea) | 464,608 | 🚀 2139/天 | 🧩 Agent Skills |
-| 🥈 | [mattpocock/skills](https://github.com/mattpocock/skills) | 326,087 | 🚀 1137/天 | 🧩 Agent Skills |
-| 🥉 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 394,611 | 🚀 1103/天 | 🛡️ AI 安全 |
-| 4 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 304,776 | 🚀 1005/天 | 🧩 Agent Skills |
-| 5 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 149,157 | 🚀 655/天 | 🧩 Agent Skills |
+| 🥇 | [morluto/rea](https://github.com/morluto/rea) | 466,731 | 🚀 2139/天 | 🧩 Agent Skills |
+| 🥈 | [mattpocock/skills](https://github.com/mattpocock/skills) | 326,899 | 🚀 1136/天 | 🧩 Agent Skills |
+| 🥉 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 394,700 | 🚀 1100/天 | 🛡️ AI 安全 |
+| 4 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 305,723 | 🚀 1005/天 | 🧩 Agent Skills |
+| 5 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 149,752 | 🚀 655/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年11月17日 星期二](reports/2026-11-17.md)
+- [2026年11月18日 星期三](reports/2026-11-18.md)
