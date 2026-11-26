@@ -6,18 +6,18 @@
 
 ---
 
-## 🌟 [今日 (2026-11-25)](reports/2026-11-25.md)
+## 🌟 [今日 (2026-11-26)](reports/2026-11-26.md)
 
 | # | 项目 | Stars | 日均增长 | 分类 |
 |---|------|-------|----------|------|
-| 🥇 | [morluto/rea](https://github.com/morluto/rea) | 477,482 | 🚀 2120/天 | 🧩 Agent Skills |
-| 🥈 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 198,206 | 🚀 1192/天 | 🧩 Agent Skills |
-| 🥉 | [mattpocock/skills](https://github.com/mattpocock/skills) | 332,367 | 🚀 1127/天 | 🧩 Agent Skills |
-| 4 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 395,173 | 🚀 1080/天 | 🛡️ AI 安全 |
-| 5 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 310,320 | 🚀 997/天 | 🧩 Agent Skills |
+| 🥇 | [morluto/rea](https://github.com/morluto/rea) | 478,757 | 🚀 2116/天 | 🧩 Agent Skills |
+| 🥈 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 198,864 | 🚀 1189/天 | 🧩 Agent Skills |
+| 🥉 | [mattpocock/skills](https://github.com/mattpocock/skills) | 333,046 | 🚀 1126/天 | 🧩 Agent Skills |
+| 4 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 395,248 | 🚀 1077/天 | 🛡️ AI 安全 |
+| 5 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 310,840 | 🚀 996/天 | 🧩 Agent Skills |
 
 ---
 
 ## 📅 历史日报
 
-- [2026年11月25日 星期三](reports/2026-11-25.md)
+- [2026年11月26日 星期四](reports/2026-11-26.md)
